@@ -1,0 +1,172 @@
+    @font-face {
+      font-family: 'broca';
+      src: url(fonts/Broca.ttf);
+    }
+    
+    body {
+        background-image: linear-gradient(to bottom, rgb(57, 57, 57), rgb(24, 23, 23));
+        background-attachment:scroll
+        }
+   
+   #my-heading {    
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-family: 'broca';
+      font-weight: bold;
+      font-size: 40px;
+    }
+   #head2 {
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-family: 'broca';
+      font-weight: bold;
+      font-size: 40px;
+      text-decoration: underline;
+   }
+    #para {
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        font-family:sans-serif;
+        font-weight: bolder;
+        text-align: center;
+    }
+    #req {
+      color: rgb(255, 255, 255);
+      font-size: 15px;
+      font-family:sans-serif;
+      font-weight: bolder;
+    }
+    .parent {
+        text-align: center;
+      }
+      
+      #dona {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        padding: 10px 20px;
+        background-color: rgba(255, 228, 196, 0.582);
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        transition-property: width, height, font-size;
+        transition-duration: 0.7s;
+        border: none;
+        cursor: pointer;
+      }
+      
+      #dona:hover {
+        width: 200px;
+        height: 70px;
+        font-size: 18px;
+        animation: color 0.7s;
+        animation-fill-mode: forwards;
+     }
+
+     @keyframes color {
+        0%{
+        background-color: rgba(255, 228, 196, 0.58);
+        }
+        100%{
+        background-color: red;
+        color: whitesmoke;
+        }
+     }
+     #mytopnav {
+        margin: 0;
+        padding: 0;
+     }
+     .topnav {
+        background-color: rgba(0, 0, 0, 1);
+        overflow: hidden;
+        border-radius: 10px;
+     }
+     .topnav a {
+        float: left;
+        padding: 14px 16px;
+        text-align: center;
+        font-size: x-large;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+
+     }
+     .topnav input[type=text] {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 80px;
+        height: 30px;
+        color: rgba(255, 0255, 255, alpha);
+        float: right;
+        text-align: left;
+        font-size: 15px;
+        border: none;
+        margin-right: 8px;
+        margin-top: 13px;
+        border-radius: 10px;
+        transition-duration: 0.5s;
+        transition-property: width, height;
+        transition-timing-function: ease-in-out;
+     }
+     .topnav input[type=text]:hover {
+      width: 200px;
+      height: 30px;
+      animation: searchbar 0.5s ease-in-out forwards;
+     }
+     @keyframes searchbar {
+      0%{
+         background-color: rgb(255, 255, 255, 0.5);
+      }
+      100%{
+         background-color: rgb(255, 255, 255, 1);
+      }
+     }
+     .topnav a:hover {
+        background-color: rgba(247, 62, 0);
+        color: rgb(255, 255, 255);
+        animation: topnavc 0.3s;
+        animation-timing-function: linear;
+     }
+     .topnav a.active {
+        background-color: brown;
+     }
+     
+     @keyframes topnavc {
+        0%{
+            background-color: rgba(247, 62, 0, 0);
+            color: aliceblue;
+        }
+        100%{
+            background-color: rgb(247, 62, 0);
+            color: rgb(255, 255, 255);
+        }
+     }
+.container {
+   position: relative;
+}
+.container img {
+   -webkit-filter: blur(5px);
+   filter: blur(5px);
+   width: 200px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+ }
+#longtxt {
+   color: rgb(255, 255, 255);
+   font-size: 15px;
+   font-family:sans-serif;
+   font-weight: bolder;
+}
+#req {
+   margin-top: 50px;
+   margin-bottom: 50px;
+   background-color: rgba(0, 0, 0, 0.548);
+   border-style: dashed;
+   border-color: bisque;
+   border-radius: 20px;
+}
+.vid {
+display: block;
+float: right;
+margin: auto;
+}
